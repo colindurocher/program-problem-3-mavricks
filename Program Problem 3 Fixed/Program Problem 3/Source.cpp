@@ -32,19 +32,25 @@ void main() {
 	third_digit = user_numb % 10; // Finds third digit value
 	second_digit = (user_numb / 10) % 10; // Finds second digit value
 	first_digit = user_numb / 100; // Finds first digit value
-
+for ( int i = 0; i < 30 ; i = i + 1 ) {
 	if (first_digit > second_digit && second_digit > third_digit) { // Accounts for digit values, if condition is met the comment is printed to computer (ascending order)
-		cout << "The number is in Descending order.";
+		cout << user_numb <<" is Descending.\n";
 		}
 
 	else if (first_digit < second_digit && second_digit < third_digit) { // Accounts for digit values, if condition is met the comment is printed to computer (descending order)
-		cout << "The number is in Ascending order.";
+		cout << user_numb <<" is Ascending.\n";
 	}
 
 	else {
-		cout << "The number is neither in Ascending or Descending order.";  // If neither conditions are met then this comment is printed
+		cout << user_numb << "is neither Ascending or Descending.\n";  // If neither conditions are met then this comment is printed
 	}
+	cout << "Enter any positive 3 digit integer : \n";
+	cin >> user_numb;
 
+	third_digit = user_numb % 10; // Finds third digit value
+	second_digit = (user_numb / 10) % 10; // Finds second digit value
+	first_digit = user_numb / 100; // Finds first digit value
+}
 	pause(); // pauses to see the displayed text
 
 }

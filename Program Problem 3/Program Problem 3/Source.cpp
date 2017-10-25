@@ -9,7 +9,7 @@ Brief Discription - We wil use selection data types to put in order digits from 
 using namespace std;
 
 void pause() {
-	
+
 	cout << " Press any key to continue . . .";
 	while (!_kbhit());
 	_getch();
@@ -17,34 +17,36 @@ void pause() {
 }
 
 void main() {
+	int i = 0;
 	int user_numb;
 	int first_digit;
 	int second_digit;
 	int third_digit;
-	
-	cout << "Enter any positive 3 digit integer : ";
-	cin >> user_numb;
 
-	third_digit = user_numb % 10;
-	second_digit = (user_numb / 10) % 10;
-	first_digit = user_numb / 100;
+	while
+		(i < 30)
+	{
+		cout << "Enter any positive 3 digit integer : ";
+		cin >> user_numb;
+		third_digit = user_numb % 10;
+		second_digit = (user_numb / 10) % 10;
+		first_digit = user_numb / 100;
 
-	if (first_digit > second_digit && second_digit > third_digit) {
-		cout << "The number is in Descending order.";
+		if (first_digit > second_digit && second_digit > third_digit) {
+			cout << user_numb << " is in Descending order." << endl;
 		}
 
-	else if (first_digit < second_digit && second_digit < third_digit) {
-		cout << "The number is in Ascending order.";
-	}
+		else if (first_digit < second_digit && second_digit < third_digit) {
+			cout << user_numb << " is in Ascending order." << endl;
+		}
 
-	else {
-		cout << "The number is neither in Ascending or Descending order.";
+		else {
+			cout << user_numb << " is neither in Ascending or Descending order." << endl;
+		}
+		i++;
 	}
+	
 
 	pause();
 
 }
- 
-
-
-
